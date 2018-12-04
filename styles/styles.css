@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css?family=Shadows+Into+Light");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+body .add-card {
+  padding: 15px 30px;
+  background-color: #c7ecee;
+  font-size: 16px;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-box-shadow: inset -2px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: inset -2px -2px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1em;
+}
+
+body .add-card:hover {
+  background-color: #49f0f0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate(-1px);
+          transform: translate(-1px);
+}
+
+body .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+  position: relative;
+  cursor: pointer;
+}
+
+body .overlay .close-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1em;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body .overlay .close-menu:hover {
+  background-color: black;
+}
+
+body .overlay .new-card-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .overlay .new-card-form #front-card, body .overlay .new-card-form #back-card {
+  width: 400px;
+  height: 250px;
+  overflow: scroll;
+  font-family: 'Shadows Into Light', cursive;
+  background-color: white;
+  padding: 1em;
+  font-size: 18px;
+  resize: none;
+}
+
+body .overlay .new-card-form #back-card {
+  margin-top: 10px;
+}
+
+body .overlay .new-card-form #submit-card-form {
+  padding: 15px 30px;
+  background-color: #c7ecee;
+  font-size: 16px;
+  color: black;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-box-shadow: inset -2px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: inset -2px -2px rgba(0, 0, 0, 0.2);
+  margin: 1em;
+}
+
+body .overlay .new-card-form #submit-card-form:hover {
+  background-color: #49f0f0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: translate(-1px);
+          transform: translate(-1px);
+}
+
+body .card-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  background-color: white;
+  list-style: none;
+}
+
+body .card-container .card {
+  width: 400px;
+  height: 250px;
+  background-color: white;
+  padding: 1em;
+  position: relative;
+}
+
+body .card-container .card box-shadow
+.front-card, body .card-container .card .back-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
